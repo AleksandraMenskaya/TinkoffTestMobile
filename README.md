@@ -81,11 +81,6 @@ gradle clean remote_test -DdeviceHost=remote
 <img title="Allure TestOps DashBoard" src="media/allureTestOps.png">
 </p>
 
-## <img src="media/Jira.svg" title="Allure TestOps" width="4%"/> Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1094)
-
-Реализована интеграция <code>Allure TestOps</code>.
-
-
 ## Видео примера запуска тестов в Selenoid
 
 К каждому тесту в отчете прилагается видео прогона.
