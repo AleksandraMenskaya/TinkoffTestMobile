@@ -83,19 +83,8 @@ gradle clean remote_test -DdeviceHost=remote
 
 ## <img src="media/Jira.svg" title="Allure TestOps" width="4%"/> Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1094)
 
-Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>, в тикете отображается информация, какие тест-кейсы были написаны в рамках задачи и результат их прогона.
+Реализована интеграция <code>Allure TestOps</code>.
 
-<p align="center">
-<img title="Jira Task" src="media/jiraTask.png">
-</p>
-
-## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/telegram.svg"> Уведомления в Telegram с использованием бота
-
-После завершения сборки, бот созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с результатом.
-
-<p align="center">
-<img width="40%"  title="Telegram Notifications" src="media/telegramBot.jpg">
-</p>
 
 ## Видео примера запуска тестов в Selenoid
 
