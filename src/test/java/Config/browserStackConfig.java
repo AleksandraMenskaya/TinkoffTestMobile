@@ -27,7 +27,6 @@ public interface browserStackConfig extends Config {
     @Key("baseUrl")
     String getBaseUrl();
 
-
     @Key("project")
     String getProject();
 
