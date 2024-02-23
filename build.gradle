@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'io.qameta.allure' version '2.11.2'
-    id "io.freefair.lombok" version "6.0.0-m2"
+//    id "io.freefair.lombok" version "6.0.0-m2"
 }
 
 repositories {
@@ -32,13 +32,13 @@ allure {
 
 dependencies {
     testImplementation(
-            "org.aeonbits.owner:owner:1.0.12",
             "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
-            "io.rest-assured:rest-assured:$restAssuredVersion",
             "io.appium:java-client:$javaClient",
+            "io.rest-assured:rest-assured:$restAssuredVersion",
             "org.junit.jupiter:junit-jupiter:$junitVersion",
             "org.slf4j:slf4j-simple:$slf4jVersion",
+            "org.aeonbits.owner:owner:1.0.12",
             "commons-io:commons-io:$commonsIoVersion"
     )
 }

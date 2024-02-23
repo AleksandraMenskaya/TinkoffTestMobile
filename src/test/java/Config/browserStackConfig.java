@@ -2,9 +2,7 @@ package Config;
 
 import org.aeonbits.owner.Config;
 
-@Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
-        "classpath:auth.properties",
         "classpath:mobile.properties"
 })
 public interface browserStackConfig extends Config {
