@@ -1,6 +1,6 @@
 package drivers;
 
-import config.localConfig;
+import config.LocalConfig;
 import com.codeborne.selenide.WebDriverProvider;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
@@ -20,10 +20,11 @@ import static org.apache.commons.io.FileUtils.copyInputStreamToFile;
 
 public class LocalDriver implements WebDriverProvider {
 
-    private static localConfig config = ConfigFactory.create(localConfig.class, System.getProperties());
+    private static LocalConfig config = ConfigFactory.create(LocalConfig.class, System.getProperties());
     @Nonnull
     @Override
     public WebDriver createDriver(@Nonnull Capabilities capabilities) {
+        System.out.println("LOCAL createDriver");
         UiAutomator2Options options = new UiAutomator2Options();
         options.merge(capabilities);
 
@@ -39,6 +40,7 @@ public class LocalDriver implements WebDriverProvider {
     }
 
     public static URL getAppiumServerUrl() {
+        System.out.println("LOCAL getAppiumServerUrl");
         try {
             return new URL("http://localhost:4723/wd/hub");
         } catch (MalformedURLException e) {

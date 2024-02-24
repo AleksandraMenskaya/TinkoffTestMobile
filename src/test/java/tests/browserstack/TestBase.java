@@ -15,6 +15,7 @@ public class TestBase {
 
     @BeforeAll
     static void beforeAll() {
+        System.out.println("TestBase BS " + BrowserStackDriver.class.getName());
         Configuration.browser = BrowserStackDriver.class.getName();
         Configuration.browserSize = null;
         Configuration.timeout = 30000;

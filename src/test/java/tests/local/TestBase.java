@@ -2,6 +2,7 @@ package tests.local;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import drivers.BrowserStackDriver;
 import drivers.LocalDriver;
 import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -15,6 +16,7 @@ public class TestBase {
 
     @BeforeAll
     static void beforeAll() {
+        System.out.println("TestBase Local " + BrowserStackDriver.class.getName());
         Configuration.browser = LocalDriver.class.getName();
         Configuration.browserSize = null;
         Configuration.timeout = 30000;
