@@ -26,8 +26,6 @@
 <a href="https://junit.org/junit5/"><img src="media/jUnit5.svg" width="60" height="60"  alt="JUnit 5"/></a>
 <a href="https://github.com/"><img src="media/gitHub.svg" width="60" height="60"  alt="GitHub"/></a>
 <a href="https://www.jenkins.io/"><img src="media/jenkins.svg" width="60" height="60"  alt="Jenkins"/></a>
-<a href="https://web.telegram.org/"><img src="media/telegram.svg" width="60" height="60"  alt="Telegram"/></a>
-<a href="https://www.atlassian.com/software/jira/"><img src="media/Jira.svg" width="60" height="60" alt="Jira" title="Jira"/></a> 
 </p>
 
 - В проекте автотесты написаны на языке <code>Java</code> с использованием фреймворка для тестирования [Selenide](https://selenide.org/).
@@ -35,16 +33,16 @@
 - Для модульного тестирования приложения используется фреймворк <code>JUnit 5</code>.
 - Для локального тестирования приложения на мобильных устройствах используется Android Studio и Appium
 - Для удаленного тестирования в различных платформах Browserstack
-- Allure Report, AllureTestOps и Telegram Bot используются для визуализации результатов тестирования
+- Allure Report и AllureTestOps используются для визуализации результатов тестирования
   
 ## Список авто тестов
 **При запуске удаленно:**
-- [x] Проверка обнаружения результатов поиска
-- [x] Открытие первой найденной ссылки
-- [x] Проверка краткого описания статьи
+- [x] Проверка наличия поисковой выдачи
+- [x] Проверка перехода по первой ссылке поисковой выдачи
+- [x] Проверка описания заголовка
 
 **При запуске локально:**
-- [x] Проверка обнаружения результатов поиска
+- [x] Проверка наличия поисковой выдачи
 
 ## :arrow_forward: Запуск автотестов
 
@@ -60,18 +58,18 @@ gradle clean remote_test -DdeviceHost=remote
 
 ```
 
-## <img src="media/jenkins.svg" title="Allure TestOps" width="4%"/> Созданный проект в [Jenkins](https://jenkins.autotests.cloud/job/hw23_mobileTest/)
+## <img src="media/jenkins.svg" title="Allure TestOps" width="4%"/> Созданный проект в [Jenkins](https://jenkins.autotests.cloud/job/WikipediaTestMobile/)
 <p align="center">
-<img title="allure-report" src="media/jenkinsPrj.png">
+<img title="allure-report" src="media/jenkinsExample.png">
 </p>
 
-## <img src="media/allure.svg" title="Allure TestOps" width="4%"/> Пример [Allure-отчета](https://jenkins.autotests.cloud/job/hw23_mobileTest/5/allure/)
+## <img src="media/allure.svg" title="Allure TestOps" width="4%"/> Пример [Allure-отчета](https://jenkins.autotests.cloud/job/WikipediaTestMobile/allure/)
 В отчете отображены пройденные автотесты. На приложенном изображении открыт тест кейс, отображены его шаги, прикреплены логи, скрины и видео
 <p align="center">
 <img title="Allure Overview" src="media/allure-report.png">
 </p>
 
-## Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/35268)
+## Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/35984)
 
 Выполнена интеграция сборки <code>Jenkins</code> с <code>Allure TestOps</code>.
 Результат выполнения автотестов отображается в <code>Allure TestOps</code>
@@ -85,5 +83,5 @@ gradle clean remote_test -DdeviceHost=remote
 
 К каждому тесту в отчете прилагается видео прогона.
 <p align="center">
-  <img title="Selenoid Video" src="media/videoTest.gif">
+  <img title="Selenoid Video" src="media/video.gif">
 </p>
