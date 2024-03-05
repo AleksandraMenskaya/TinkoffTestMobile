@@ -49,12 +49,12 @@
 ### Запуск тестов на удаленном браузере
 Локальный запуск тестов
 ```
-gradle clean local_test -DdeviceHost=local
+gradle clean Test -DdeviceHost=local
 
 ```
 Запуск удаленно:
 ```
-gradle clean remote_test -DdeviceHost=remote
+gradle clean Test -DdeviceHost=remote
 
 ```
 
